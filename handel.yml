@@ -1,0 +1,13 @@
+version: 1
+
+name: dev
+
+environments:
+  dev:
+    creativity-3-project:
+      type: s3staticsite
+      bucket_name: creativity-3-cs260
+      path_to_code: ./__site
+      versioning: disabled
+      index_document: index.html
+      error_document: error.html

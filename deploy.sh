@@ -1,0 +1,1 @@
+handel deploy -c crookk-byu.yml -e dev

@@ -1,0 +1,13 @@
+account_id: "416877887324" # Required. The numeric ID of your AWS account.
+region: us-east-1 # Required. The region, such as 'us-west-2' that your VPC resides in.
+vpc: vpc-29f22153 # Required. The ID of your VPC in which to deploy your applications.
+public_subnets: # Required. A list of one or more subnet IDs from your VPC where you want to deploy publicly available resources.
+- subnet-1c56d17b
+- subnet-1c56d17b
+private_subnets: # Required. A list of one or more subnet IDs from your VPC where you want to deploy private resources.
+- subnet-0aeabfc1ec1770dbf
+data_subnets: # Required. A list of one or more subnet IDs from your VPC where you want to deploy databases (such as RDS and ElastiCache)
+- subnet-05ba87528491788b9
+ssh_bastion_sg: sg-5b9fe317 # The ID of the security group you
+elasticache_subnet_group: handel # The name of the ElastiCache subnet group to use when deploying ElastiCache clusters.
+rds_subnet_group: handel # The name of the RDS subnet group to use when deploying RDS clusters.
