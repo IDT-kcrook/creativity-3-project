@@ -1,0 +1,20 @@
+version: 1
+
+name: creativity-3-project # Replace with your own app name
+
+pipelines:
+  dev:
+    phases:
+    - type: github
+      name: Pull_from_GitHub
+      owner: byu-oit
+      owner: IDT-kcrook # Replace with your own GitHub username
+      repo: creativity-3-project # Replace with your own GitHub repository name
+      branch: master
+    - type: codebuild
+      name: Build
+      build_image: aws/codebuild/nodejs:10.1.0
+    - type: handel
+      name: Deploy
+      environments_to_deploy:
+      - dev
