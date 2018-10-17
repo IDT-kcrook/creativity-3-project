@@ -6,16 +6,42 @@
     <title>Mad Lib Generator</title>
 
     <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
-        <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.19/angular.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.19/angular.min.js"></script>
     <script src="./js/index.js"></script>
 
 </head>
 
 <body ng-app="MadLib">
+    <div ng-controller="MainCtrl">
+        <br>
+        <span>Your name:</span>
+        <input type="text" ng-model="First" placeholder="First Name">
+        <input type="text" ng-model="Last" placeholder="Last Name">
+        <br>
+        <span>A place:</span>
+        <input type="text" ng-model="Place" placeholder="Place">
+        <br>
+        <span>Please give us 5 verbs in the requested tense:</span> <br>
+        <input type="text" ng-model="Verb1" placeholder="Past (smelled)"> <br>
+        <input type="text" ng-model="Verb2" placeholder="Past (took)"> <br>
+        <input type="text" ng-model="Verb3" placeholder="Present (implode)"> <br>
+        <input type="text" ng-model="Verb4" placeholder="Present Participle (walking)"> <br>
+        <input type="text" ng-model="Verb5" placeholder="Past (threw)"> <br>
+        <br>
+        <span>Please give us 5 nouns:</span> <br>
+        <input type="text" ng-model="Noun1" placeholder="Cheese Nip"> <br>
+        <input type="text" ng-model="Noun2" placeholder="Hurricane"> <br>
+        <input type="text" ng-model="Noun3" placeholder="Tortoise"> <br>
+        <input type="text" ng-model="Noun4" placeholder="Man bun"> <br>
+        <input type="text" ng-model="Noun5" placeholder="Violin"> <br>
+        <br>
+        <button ng-click='generateStory()'>Ready!</button>
+        <h2>Your Personalized Mad Lib:</h2> <br>
+        <p>
+            {{story}}
+        </p>
+    </div>
 
-    <h1>My First Heading</h1>
-
-    <p>My first paragraph.</p>
 
 </body>
 
