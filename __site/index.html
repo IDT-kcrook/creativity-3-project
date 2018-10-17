@@ -37,7 +37,10 @@
         <br>
         <button ng-click='generateStory()'>Ready!</button>
         <h2>Your Personalized Mad Lib:</h2> <br>
-        <p>
+        <p id=intro >
+            {{intro}}
+        </p>
+        <p id=body >
             {{story}}
         </p>
     </div>
