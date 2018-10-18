@@ -15,30 +15,28 @@
 <body ng-app="MadLib">
     <div ng-controller="MainCtrl">
         <h1>MadLibs!</h1>
-        <p>Please input the correct words into the correct fields</p>
+        <p>Please input the correct words into the fields below:</p>
         <input type="text" ng-model="Verb1" placeholder="Past (smelled)">
         <input type="text" ng-model="Verb2" placeholder="Past (took)">
-        <input type="text" ng-model="Verb3" placeholder="Present (implode)"> 
-        <input type="text" ng-model="Verb4" placeholder="Present Participle (walking)"> 
-        <input type="text" ng-model="Verb5" placeholder="Past (threw)"> 
+        <input type="text" ng-model="Verb3" placeholder="Present (implode)">
+        <input type="text" ng-model="Verb4" placeholder="Present Participle (walking)">
+        <input type="text" ng-model="Verb5" placeholder="Past (threw)">
         <br>
-        <input type="text" ng-model="Noun1" placeholder="cheese nip"> 
-        <input type="text" ng-model="Noun2" placeholder="hurricane"> 
-        <input type="text" ng-model="Noun3" placeholder="tortoise"> 
-        <input type="text" ng-model="Noun4" placeholder="man bun"> 
-        <input type="text" ng-model="Noun5" placeholder="violin"> 
+        <input type="text" ng-model="Noun1" placeholder="Noun (cheese nip)">
+        <input type="text" ng-model="Noun2" placeholder="Noun (hurricane)">
+        <input type="text" ng-model="Noun3" placeholder="Noun (tortoise)">
+        <input type="text" ng-model="Noun4" placeholder="Noun (man bun)">
+        <input type="text" ng-model="Noun5" placeholder="Noun (violin)">
         <br><br>
         <button id=submit ng-click='generateStory()'>Ready!</button>
         <h2>Your Personalized Mad Lib</h2> <br>
-        <p id=intro >
+        <p id=intro>
             {{intro}}
         </p>
-        <p id=body >
+        <p id=body>
             {{story}}
         </p>
     </div>
-
-
 </body>
 
 </html>

@@ -3,7 +3,9 @@ body {text-align: center; font-family: "Acme"; background-color: #659DBD;
 
 h1{font-size: 80px;}
 
-p {font-size: 20px;}
+p {
+    font-size: 20px;
+}
 
 input[type=text] {
     color: #DAAD86;
@@ -35,4 +37,13 @@ input[type=text]:focus {
     font-size: 50px;
 }
 
-#body {padding-bottom: 200px}
+#intro {
+    margin-right: 80px;
+    margin-left: 80px;
+}
+
+#body {
+    padding-bottom: 200px;
+    margin-right: 80px;
+    margin-left: 80px;
+}
