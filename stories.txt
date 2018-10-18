@@ -8,9 +8,7 @@
         {
             "intro": "You are a hobo that one day, while intensely people-watching, comes to realise something unexpected..."
         },
-        {
-            "intro": "You are caught in the grip of a monster that feeds off your mind. Your only way to make it let you go is to feed it the cringiest, most awkward memories you can bring up."
-        },
+
         {
             "intro": "She's not the first cat you've rescued from the shelter, but she's the only one you're pretty sure must have once belonged to a wizard."
         },

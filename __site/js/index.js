@@ -12,7 +12,7 @@ app.controller('MainCtrl', function($scope) {
         {
             "intro": "You are caught in the grip of a monster that feeds off your mind. Your only way to make it let you go is to feed it the cringiest, most awkward memories you can bring up.",
             "story": "Immediately you came to the realization of a memory of legendary cringey quality: your first mutual date. You and your date decided to {Verb3} {Noun1}s together, but you forgot to bring the {Noun2}. When it couldn't possibly get worse, the {Noun3} was broken and your date {Verb2} {Noun4}s all over your car floor. While {Verb4} the mess, a {Noun5} {Verb5} from the glovebox. Both uncomfortable, you and your date {Verb1} home."
-        },
+        }
     ];
     $scope.generateStory = function() {
         var num_stories = $scope.data.length;
